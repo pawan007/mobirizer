@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#FFFFFF">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical" >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="@color/headercolor" >
+
+           <TextView
+               android:id="@+id/wifitext"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:text="Your Task"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:textColor="#FFFFFF" />
+
+           <ImageView
+               android:id="@+id/imageView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_margin="10dp"
+               android:layout_toLeftOf="@+id/wifitext"
+               android:contentDescription="@null"
+               android:src="@drawable/tasknamebuttonselector" />
+       </RelativeLayout>
+
+       <EditText
+           android:id="@+id/edit_taskname"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="@dimen/header_gap_dialog"
+           android:inputType="text"
+           >
+       </EditText>
+
+       <Button
+           android:id="@+id/dialogButton"
+           android:layout_width="100dp"
+           android:layout_height="45dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_margin="@dimen/header_gap_dialog"
+           android:background="@drawable/rectangleselector"
+           android:contentDescription="@null"
+           android:text="@string/layout_actionchooser_ok"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+   </LinearLayout>
+
+</RelativeLayout>

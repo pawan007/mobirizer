@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutcompany">
+
+    
+<!--  <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/ads_layout" /> -->
+
+    <ImageView
+        android:id="@+id/img_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_fb"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/img_fb"
+        android:src="@drawable/twiter" />
+
+    <ImageView
+        android:id="@+id/img_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_google"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/img_google"
+        android:src="@drawable/fb" />
+
+    <ImageView
+        android:id="@+id/img_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="41dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/google" />
+
+</RelativeLayout>

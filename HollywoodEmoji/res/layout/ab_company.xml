@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/abtcompany">
+    
+<Button
+            android:id="@+id/gp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/fb"
+            android:layout_alignBottom="@+id/fb"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/google"
+            android:onClick="openGPlus" />
+<Button
+            android:id="@+id/twit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/gp"
+            android:layout_alignBottom="@+id/gp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/gp"
+            android:background="@drawable/twiter"
+            android:onClick="openTwit" />
+
+<Button
+    android:id="@+id/fb"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="46dp"
+    android:layout_marginRight="15dp"
+    android:layout_toLeftOf="@+id/gp"
+    android:background="@drawable/facebook"
+    android:onClick="openFB" />
+
+</RelativeLayout>

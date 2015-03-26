@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#FFFFFF">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       android:orientation="vertical"
+       >
+
+	<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/headercolor" 
+    >
+
+		<TextView
+		    android:id="@+id/wifitext"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_centerHorizontal="true"
+		    android:text="BLUETOOTH"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:textColor="#FFFFFF" />
+
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		   android:layout_centerVertical="true"
+		   android:layout_toLeftOf="@+id/wifitext"
+		   android:layout_margin="10dp"
+		    android:src="@drawable/bluetoothforlist" 
+		    android:contentDescription="@null"/>
+
+    </RelativeLayout>
+ 	<ToggleButton
+       android:id="@+id/togglewifi"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/toggleswitch_click"
+       android:layout_gravity="center_horizontal"
+       android:button="@null"
+      android:layout_marginTop="@dimen/header_gap_dialog"
+       android:textOff=""
+       android:textOn="" />
+     <Button
+        android:id="@+id/dialogButton"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rectangleselector"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/layout_actionchooser_ok"
+        android:layout_margin="@dimen/header_gap_dialog"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:contentDescription="@null"
+        />
+     </LinearLayout>
+</RelativeLayout>

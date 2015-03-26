@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="headercolor">#00B6EF</color>
+     <color name="layout_bg_color">#f2f2f2</color>
+      <color name="layout_customforseek_color">#D5D5D5</color>
+     <color name="circle_color">#F5ACA6</color>
+      <color name="text_color">#FFFFFF</color>
+      <color name="text_color_setting">#797979</color>
+      <color name="light_red">#7bcd4d</color>
+    <color name="light_green">#f26665</color>
+    <color name="black">#000000</color>
+    <color name="settingblack">#64000000</color>
+    <color name="settingbtn_selector">#9600B6EF</color>
+    <color name="setting_headercolor">#07B5EA</color>
+</resources>

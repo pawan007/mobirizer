@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">Loco Reminder</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Loco Reminder</string>
+    <string name="str_btn_find">Find</string>
+    <string name="hnt_et_location">Enter location</string>
+    <string name="location">Location:-</string>
+    <string name="Message">Message:-</string>
+    <string name="Daily">Daily</string>
+    <string name="OneTime">One Time</string>
+    <string name="SearchEditHint">Type Street, City, State</string>
+    <string name="HintString">  Add Reminder   </string>
+    <string name="spinner_title">Select Radius</string>
+
+</resources>

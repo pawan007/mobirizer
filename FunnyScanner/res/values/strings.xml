@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Funny Xray Scanner</string>
+    <string name="test">Danger</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

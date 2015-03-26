@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:orientation="vertical"
+     android:background="@drawable/menupagebg" >
+
+    <ListView
+        android:id="@+id/lstserchplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:dividerHeight="3dp"
+       	android:layout_margin="5dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="88dp"
+        android:layout_marginRight="45dp"
+        android:background="#505050"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edtSerchPLace"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+        	android:imeOptions="actionSend|flagNoEnterAction"
+            android:background="#505050"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/SearchEditHint"
+            android:paddingLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgbtnSerchSplit"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0"
+            android:background="@drawable/spliter" />
+
+        <ImageView
+            android:id="@+id/imgbtnSerch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+             android:layout_marginRight="10dp"
+            android:layout_weight="0"
+            android:background="@drawable/searchbtnselector" />
+
+       <!--  <ImageView
+            android:id="@+id/imgBtnaddYourLocatiom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/gps1" /> -->
+    
+    </LinearLayout>
+
+	<ImageView
+	    android:id="@+id/imgBtnaddYourLocatiom"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/linearLayout1"
+	    android:layout_alignRight="@+id/lstserchplace"
+	    android:layout_alignTop="@+id/linearLayout1"
+	    android:src="@drawable/gpsbtnselector" />
+
+</RelativeLayout>

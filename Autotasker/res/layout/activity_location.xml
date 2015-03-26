@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_header_height"
+        android:background="@color/headercolor" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Map_page_header"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_color"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/btnSubmitt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_default"
+            android:contentDescription="@null"
+            android:src="@drawable/settingsubmit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="horizontal" 
+        android:layout_toLeftOf="@+id/img_recentlyview">
+
+        <EditText
+            android:id="@+id/edtlocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Location" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/edtlocation"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/searchbtnselector" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/add_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_above="@+id/add_layout"
+        android:layout_below="@+id/linearLayoutsearch"
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <fragment
+            android:id="@+id/location_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" />
+
+        <SeekBar
+            android:id="@+id/set_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:padding="@dimen/margin_seekbar" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_recentlyview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayoutsearch"
+        android:layout_margin="15dp"
+        android:src="@drawable/recentviewedselector" />
+
+</RelativeLayout>

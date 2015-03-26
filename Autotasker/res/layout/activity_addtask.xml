@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutheader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_header_heightformenu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/headercolor" >
+
+        <TextView
+            android:id="@+id/newtask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/new_task_text"
+            android:textColor="@color/text_color"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <ImageView
+            android:id="@+id/action_chooser_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_default"
+            android:contentDescription="@null"
+            android:src="@drawable/settingsubmit" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativelayoutheader" >
+
+        <RelativeLayout
+            android:id="@+id/detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayouttaskname"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="2dp"
+                android:background="@color/layout_bg_color" >
+
+                <ImageView
+                    android:id="@+id/editmessage_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:layout_marginLeft="@dimen/margin_left_icon"
+                    android:src="@drawable/tasknamebuttonselector" />
+
+                <TextView
+                    android:id="@+id/task_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/editmessage_task"
+                    android:gravity="left"
+                    android:paddingRight="@dimen/padding_text"
+                    android:paddingLeft="@dimen/padding_text"
+                    android:text="@string/Layout_taskname_text"
+                    
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutlocationname"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_below="@id/relativeLayouttaskname"
+                android:layout_marginTop="2dp"
+                android:background="@color/layout_bg_color" >
+
+                <TextView
+                    android:id="@+id/picklocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/locationpin"
+                    android:maxLines="2"
+                    android:gravity="left"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/padding_text"
+                    android:paddingRight="@dimen/padding_text"
+                    android:text="@string/Layout_picklocation_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageView
+                    android:id="@+id/locationpin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left_icon"
+                    android:contentDescription="@null"
+                    android:src="@drawable/locationpinbuttonselector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutaction"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_below="@id/relativeLayoutlocationname"
+                android:layout_marginTop="2dp"
+                android:background="@color/layout_bg_color" >
+
+                <TextView
+                    android:id="@+id/actionname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/actioniconfortask"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/padding_text"
+                    android:paddingRight="@dimen/padding_text"
+                    android:text="@string/Layout_action_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ImageView
+                    android:id="@+id/actioniconfortask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left_icon"
+                    android:contentDescription="@null"
+                    android:src="@drawable/actionbuttonselector" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/padding_text"
+                    android:paddingRight="@dimen/padding_text"
+                    android:layout_toRightOf="@+id/actioniconfortask"
+                    android:scrollbars="none"
+                    android:visibility="invisible" >
+
+                    <LinearLayout
+                        android:id="@+id/icon_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayoutsetwall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayoutaction"
+                android:layout_marginTop="2dp"
+                >
+
+                <ImageView
+                    android:id="@+id/walliconfortask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/margin_left_icon"
+                    android:contentDescription="@null"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutsettingaction"
+            android:layout_width="@dimen/action_circle_width"
+            android:layout_height="@dimen/action_circle_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/action_circle_top_margin"
+            android:background="@drawable/circle" >
+
+            <ImageView
+                android:id="@+id/imageViewcontrast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/action_item_first_left_margin"
+                android:layout_marginTop="@dimen/action_item_first_top_margin"
+                android:contentDescription="@null"
+                android:src="@drawable/taskbtn_contastselector" />
+
+            <ImageView
+                android:id="@+id/imageViewbluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/action_item_second_left_margin"
+                android:layout_marginTop="@dimen/action_item_second_top_margin"
+                android:layout_toRightOf="@id/imageViewcontrast"
+                android:contentDescription="@null"
+                android:src="@drawable/taskbtn_bluetoothselector" />
+
+            <ImageView
+                android:id="@+id/imageViewsound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/action_item_third_top_margin"
+                android:layout_toRightOf="@id/imageViewbluetooth"
+                android:contentDescription="@null"
+                android:src="@drawable/taskbtn_soundselector" />
+
+            <ImageView
+                android:id="@+id/imageViewmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewsound"
+                android:layout_marginLeft="@dimen/action_item_third_left_margin"
+                android:layout_marginTop="@dimen/action_item_forth_top_margin"
+                android:contentDescription="@null"
+                android:src="@drawable/taskbtn_msgselector" />
+
+            <ImageView
+                android:id="@+id/imageViewwallpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/action_item_first_top_margin"
+                android:layout_marginLeft="@dimen/action_item_first_left_margin"
+                android:contentDescription="@null"
+                android:src="@drawable/taskbtn_wallselector" />
+
+            <ImageView
+                android:id="@+id/imageViewreminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/action_item_second_top_margin"
+                android:layout_marginLeft="@dimen/action_item_second_left_margin"
+                android:layout_toRightOf="@id/imageViewwallpaper"
+                android:contentDescription="@null"
+                android:src="@drawable/taskbtn_reminderselector" />
+
+            <ImageView
+                android:id="@+id/imageViewlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/action_item_third_top_margin"
+                android:layout_toRightOf="@id/imageViewbluetooth"
+                android:contentDescription="@null"
+                android:src="@drawable/taskbtn_lockselector" />
+
+            <ImageView
+                android:id="@+id/imageViewwifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/imageViewlock"
+                android:layout_marginBottom="@dimen/action_item_forth_top_margin"
+                android:layout_marginLeft="@dimen/action_item_third_left_margin"
+                android:contentDescription="@null"
+                android:src="@drawable/taskbtn_wifiselector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/add_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

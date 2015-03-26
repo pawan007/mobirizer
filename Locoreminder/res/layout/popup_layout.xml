@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="wrap_content"
+   android:id="@+id/popup"
+   android:layout_height="wrap_content"
+   android:background="@drawable/border"
+   android:orientation="vertical" >
+ <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="#272d33">
+<TextView
+   android:id="@+id/textView1"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="About Company"
+   android:textColor="#F8F8FF"
+   android:textSize="40px" />
+ 
+<TextView
+   android:id="@+id/textView2"   
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:textColor="#F8F8FF"
+   android:text="About Product" 
+   android:textSize="40px"/>
+ 
+<TextView
+   android:id="@+id/textView3"   
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Setting"
+   android:textColor="#F8F8FF"
+   android:textSize="40px" />
+ <TextView
+   android:id="@+id/text_tute"   
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:textColor="#F8F8FF"
+   android:text="Tutorial" 
+   android:textSize="40px"/>
+<TextView
+   android:id="@+id/textView4"
+   
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:textColor="#F8F8FF"
+   android:text="More apps" 
+   android:textSize="40px"/>
+
+</LinearLayout>
+ 
+</LinearLayout>

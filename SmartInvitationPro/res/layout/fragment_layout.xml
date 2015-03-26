@@ -1,0 +1,49 @@
+<com.mobirizer.smartinvitationpro.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#ffffff" >
+	<!--  News Feed Button -->
+
+    <Button
+        android:id="@+id/img_wed"
+        style="@style/DashboardButton"
+        android:drawableBottom="@drawable/wedding_selector"
+        android:text="@string/wedding" />
+	    
+	<!--  Messages Button -->
+    <Button
+        android:id="@+id/img_bday"
+        style="@style/DashboardButton"
+         android:drawableBottom="@drawable/birthday_selector"
+        android:text="@string/birthday" />
+	
+    <!--  Places Button -->
+    <Button
+        android:id="@+id/img_ann"
+        style="@style/DashboardButton"
+        android:drawableBottom="@drawable/anniversary_selector"
+        android:text="@string/anniversary" />
+
+    <!--  Events Button -->
+    <Button
+        android:id="@+id/img_eng"
+        style="@style/DashboardButton"
+        android:drawableBottom="@drawable/engagement_selector"
+        android:text="@string/engagement" />
+<!--  Friends Button -->
+    <Button
+        android:id="@+id/img_fest"
+        style="@style/DashboardButton"
+        android:drawableBottom="@drawable/festival_selector"
+        android:text="@string/festival" />
+    
+    <!--  Photos Button -->
+    <Button
+        android:id="@+id/img_party"
+        style="@style/DashboardButton"
+        android:drawableBottom="@drawable/party_selector"
+        android:text="@string/party" />
+
+</com.mobirizer.smartinvitationpro.DashboardLayout>

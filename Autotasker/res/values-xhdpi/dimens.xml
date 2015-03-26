@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+   <dimen name="top_header_height">60dp</dimen>
+    <dimen name="add_new_loc_padding">25dp</dimen>
+    <dimen name="text_size_add_new">20sp</dimen>
+    <dimen name="map_height">400dp</dimen>
+
+</resources>

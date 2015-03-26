@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/about_product"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:id="@+id/relativelayoutheader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_header_heightformenu"
+        android:background="@color/headercolor" >
+
+        <TextView
+            android:id="@+id/newtask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/about_product"
+            android:textColor="@color/text_color"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    </RelativeLayout>
+</LinearLayout>

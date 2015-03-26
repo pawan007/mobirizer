@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+   <!--  <TextView
+        android:id="@+id/textView1"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Right Menu"
+        android:textColor="#ffffff" /> -->
+
+    <Button
+        android:id="@+id/about_company"
+        android:textColor="#ffffff"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:text="About Company" 
+       
+       />
+	<Button
+        android:id="@+id/about_product"
+        android:textColor="#ffffff"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        
+        android:text="About Product" 
+       />
+	<Button
+        android:id="@+id/setting"
+        android:textColor="#ffffff"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        
+        android:text="Setting"         
+       />
+	<Button
+        android:id="@+id/more_app"
+        android:textColor="#ffffff"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+       
+        android:text="More Apps" />
+</LinearLayout>

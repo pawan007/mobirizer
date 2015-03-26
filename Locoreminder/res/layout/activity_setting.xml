@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical"
+    android:background="@drawable/settingbg" >
+    
+    <TextView android:id="@+id/show_arrive_fence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+       android:paddingTop="100dp"
+        android:text="Radius: $ Meters"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <SeekBar android:id="@+id/set_arrive_fence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <TableLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#D1D1D1"
+		android:layout_margin="5dp" >
+        <TextView android:layout_width="match_parent"
+			android:layout_height="2dp" 
+			android:background="#D1D1D1" />
+    </TableLayout>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accuracy:"
+        android:paddingTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <SeekBar android:id="@+id/set_mpg_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <TableLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#D1D1D1"
+		android:layout_margin="5dp" >
+        <TextView android:layout_width="match_parent"
+			android:layout_height="2dp" 
+			android:background="#D1D1D1" />
+    </TableLayout>
+    
+    
+    
+    
+    <Button android:id="@+id/confirm_btn" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:layout_gravity="center_horizontal"        
+        android:background="@drawable/settingsubmit" 
+        
+        />
+    
+    
+    
+    
+
+</LinearLayout>

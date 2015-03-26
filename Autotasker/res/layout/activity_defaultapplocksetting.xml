@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+       android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_header_heightformenu"        
+        android:background="#00B6EF">
+        <TextView 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:text="@string/applicationlist"
+            android:textColor="@color/text_color"
+             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <ImageView
+            android:id="@+id/img_settingsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_default"
+            android:src="@drawable/settingsubmit"
+            android:contentDescription="@null" />
+
+  </RelativeLayout>
+  <ListView
+        android:id="@+id/appListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_above="@+id/add_layout"
+        android:layout_below="@+id/header"/>
+  <TextView
+        android:id="@+id/listcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text_color" />
+   <LinearLayout
+        android:id="@+id/add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listcount"
+        android:orientation="vertical" >
+    </LinearLayout> 
+
+</RelativeLayout>

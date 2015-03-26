@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >	    
+	    
+	    <Button 
+	        android:id="@+id/btn_find"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:text="@string/str_btn_find" 
+	        android:layout_alignParentRight="true" />
+	    
+	    <AutoCompleteTextView 
+	        android:id="@+id/et_location"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"        
+	        android:inputType="text" 
+	        android:hint="@string/hnt_et_location"
+	        android:layout_toLeftOf="@id/btn_find" />
+	    
+	        
+    </RelativeLayout>
+
+     <com.google.android.maps.MapView        
+        android:id="@+id/map_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:apiKey="AIzaSyDZcEHHESH5zg7NfKvdp-w5OAE_KUpyPNg"
+        android:clickable="true" />
+     
+     <GridView 
+  		 android:id="@+id/gridview"
+   		 android:layout_width="match_parent" 
+   	     android:layout_height="wrap_content"
+   		 android:numColumns="2"
+   		 android:stretchMode="columnWidth"
+   		 android:gravity="center"/>
+
+</LinearLayout>

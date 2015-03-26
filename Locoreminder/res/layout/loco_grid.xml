@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_note"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_margin="2dp" 
+        >
+    </ImageView>
+	
+    <!-- <TextView
+        android:id="@+id/tv_loco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#000000"
+        android:textSize="15sp" >
+    </TextView> -->
+
+    <RelativeLayout
+        android:layout_width="168dp"
+        android:layout_height="156dp" >
+
+         <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pinselector" /> 
+
+        <TextView
+            android:id="@+id/tv_loco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="firstyudfrtg"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_secondloco"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_loco"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:lines="4"
+            android:maxLines="4"
+            android:text="secondlsrydfrtu" />
+    </RelativeLayout>
+
+</FrameLayout>

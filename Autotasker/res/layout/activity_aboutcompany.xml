@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutcompany">
+
+
+<RelativeLayout
+        android:id="@+id/relativelayoutheader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_header_heightformenu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/headercolor" >
+
+        <TextView
+            android:id="@+id/newtask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/about_company"
+            android:textColor="@color/text_color"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    </RelativeLayout>
+</RelativeLayout>

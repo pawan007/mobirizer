@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.foruriti.chestxrayscannerprank.StartActivity">
+    
+    <LinearLayout 
+        android:id="@+id/llayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+       
+       <ImageView 
+           android:id="@+id/start_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@drawable/start_btn_selector"/>
+    </LinearLayout>
+     <RelativeLayout
+        android:id="@+id/layoutAd1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+    </RelativeLayout>
+        
+ </RelativeLayout>   

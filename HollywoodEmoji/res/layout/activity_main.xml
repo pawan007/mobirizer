@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hollywood"
+    android:orientation="vertical"
+    tools:context="com.mobirizer.hollywoodemoji.MainActivity" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+        <ImageView 
+            android:id="@+id/play"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+             android:onClick="playGame"
+             android:background="@drawable/play_change"/>
+        <ImageView 
+            android:id="@+id/resume"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+             android:background="@drawable/resume_change"/>
+        <ImageView 
+            android:id="@+id/sound"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sound_change"/>
+        <ImageView 
+            android:id="@+id/About"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+             android:onClick="about"
+             android:background="@drawable/about_change"/>
+     </LinearLayout>
+
+      <RelativeLayout
+        android:id="@+id/layoutAd1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="bottom|center"
+        android:layout_alignParentBottom="true">
+       </RelativeLayout>
+</RelativeLayout>

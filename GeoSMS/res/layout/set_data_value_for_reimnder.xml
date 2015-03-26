@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    tools:context=".FirstActivity" >
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="75dp" 
+    android:background="#00B6EF">	
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Geo SMS" 
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+
+   
+  </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal" >
+
+	<EditText
+	    android:id="@+id/edtlocation"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="Search Location"
+	    android:layout_toRightOf="@+id/textView1" >
+	
+    </EditText>    
+    <!-- <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/location"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2" /> -->
+
+        <!-- <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/Message"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2" /> -->
+
+	<ImageView
+	    android:id="@+id/search_icon"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/edtlocation"
+	    android:layout_marginRight="10dp"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/searchbtnselector" />
+
+	
+
+	
+
+    </RelativeLayout>
+
+<!-- <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/linearLayout1"
+    android:orientation="vertical" >
+	 <TextView android:id="@+id/radius_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"    
+        android:text="Radius: $ Meters"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium" /> 
+         <SeekBar
+        android:id="@+id/set_arrive_fence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"   /> 
+     
+        <TableLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#D1D1D1"
+		android:layout_margin="5dp" > 
+       
+    </TableLayout>
+        </LinearLayout>  -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout2" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                android:layout_below="@+id/linearLayout2" > 
+                          
+                <fragment
+                    android:id="@+id/location_map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <SeekBar
+                    android:id="@+id/set_radius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:maxHeight="3dp"
+                    android:minHeight="3dp" />
+     
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout3"
+                android:orientation="vertical"
+                >
+
+                
+
+               <!--  <Button
+                    android:id="@+id/btnSubmitt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:text="Submit"
+                     /> -->
+
+               <ImageView
+                   android:id="@+id/btnSubmitt"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/settingsubmit" />
+
+        
+        
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+ 
+</RelativeLayout>
